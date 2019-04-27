@@ -4,7 +4,7 @@ css: ["index.css"]
 ---
 <div class="row">
     {% for post in paginator.posts %}
-    <div class="col s12" style="width: 21%;margin-right: 2%;margin-left: 2%;margin-bottom: 14px;">
+    <div class="col s12">
         <div class="card hoverable" style="color:#fff">
             <a href="{{post.url | prepend: site.baseurl}}">
                 <div class="card-content" style="background-color:#699">
