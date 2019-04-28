@@ -1,6 +1,7 @@
 ---
 layout: page
-css: ["index.css"]
+css: ["index.css", "topScroll.css"]
+js: ["topScroll.js"]
 ---
 <div class="row">
     {% for post in paginator.posts %}
@@ -23,7 +24,7 @@ css: ["index.css"]
             </div> -->
         </div>
     </div>
-    
+    {% include topScroll.html %}
     {% endfor %}
     <div class="col s12 center-align">
         <ul class="pagination">
