@@ -25,12 +25,12 @@
     {% endfor %}
   </div>
 </div>
-<div class="topBox">
+<div class="topBox" id="topBox">
   <img src="{{site.baseurl}}/assets/res/top.png">      
 </div>
 <script>
 var timer = null;
-box.onclick = function(){
+topBox.onclick = function(){
 cancelAnimationFrame(timer);
 timer = requestAnimationFrame(function fn(){
 var oTop = document.body.scrollTop || document.documentElement.scrollTop;
