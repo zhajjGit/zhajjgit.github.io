@@ -8,7 +8,7 @@ exclude:
 future: true
 github_profile: "https://github.com/zhajj"
 markdown: kramdown
-paginate: 10
+paginate: 50
 permalink: "/:year/:month/:day/:title"
 plugins: 
   - jekyll-feed
