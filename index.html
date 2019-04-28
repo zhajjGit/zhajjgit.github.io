@@ -13,8 +13,9 @@ css: ["index.css",]
                         <i class="material-icons">date_range</i>
                         {{post.date | date: "%d/%m/%Y %H:%M"}}
                     </p>
-                    <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
+                    <p id="post-content">{{content | remove: '<p>' | remove: '</p>'}}</p>
                 </div>
+                <!-- post.excerpt -->
             </a>
             <!-- <div class="card-action" style="background-color:#688">
                 <a href="{{post.url | prepend: site.baseurl}}">
