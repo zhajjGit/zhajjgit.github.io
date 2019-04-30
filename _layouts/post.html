@@ -63,32 +63,6 @@ js: ["post.js"]
         <b>微信公众号：程序骑士</b>
     </div>
 </div> -->
-<nav class="pagination">
-    <div class="pageturn">
-        <ul class="pagelist">
-
-            {% if tag_blogs.has_previous %}
-                <li class="long"><a href="?{{ tag_blogs.previous_page_number.querystring }}">上一页</a></li>
-            {% endif %}
-
-            {% for page in tag_blogs.pages %}
-            {% if page %}
-                {% ifequal page tag_blogs.number %}
-                    <li class="active"><a href="?{{ page.querystring }}">{{ page }}</a></li>
-                {% else %}
-                     <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li>
-                {% endifequal %}
-            {% else %}
-                <li class="none"><a href="">...</a></li>
-            {% endif %}
-            {% endfor %}
-            {% if tag_blogs.has_next %}
-                <li class="long"><a href="?{{ tag_blogs.next_page_number.querystring }}">下一页</a></li>
-            {% endif %}
-
-        </ul>
-    </div>
-</nav>
 {% if site.disqus_shortname and page.comments %}
 <div id="disqus_thread"></div>
 <script>
