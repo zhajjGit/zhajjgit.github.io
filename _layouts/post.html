@@ -54,6 +54,11 @@ js: ["post.js"]
     </div>
 </div>
 <hr>
+<div class="pagination">
+    <span class="previous">{{ baseurl:URL }}</span>
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="next ">没有下一篇了</span>
+</div>
 <!-- <div class="knight">
     <p>技术文章推送</p>
     <p>手机、电脑实用软件分享</p>
