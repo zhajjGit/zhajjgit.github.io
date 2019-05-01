@@ -60,7 +60,7 @@ js: ["post.js"]
   {% else %}
     <span class="previous">没有上一篇了</span>
   {% endif %}
-    <a href="https://zhajj.github.io/{{ paginator.previous_page_path }}" class="previous">上一篇</a>
+    <a href="https://zhajj.github.io/{{ paginator.previous_page }}" class="previous">上一篇</a>
   <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
   {% if paginator.next_page %}
     <a href="https://zhajj.github.io/{{ paginator.next_page_path }}" class="next">下一篇</a>
