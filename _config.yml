@@ -9,8 +9,7 @@ future: true
 github_profile: "https://github.com/zhajj"
 markdown: kramdown
 paginate: 50
-paginate_path: "zhajj.github.io/page:num/"
-permalink: "/:year/:month/:day/:title"
+permalink: /:year/:month/:day/:title:output_ext
 plugins: 
   - jekyll-feed
   - jekyll-paginate
