@@ -96,3 +96,34 @@ main
     ul
       &:not(.browser-default)
         width: 100%
+
+.pagination 
+    div
+      width: 200px
+      height: 40px
+      padding-top: 5px
+      padding-bottom: 5px
+      border-radius: 6px
+      border: 1px solid black
+      &:hover
+        box-shadow: 4px 4px 10px #b1afaf
+      .p
+        line-height: auto
+        display: block
+        text-align: center
+      .t
+        line-height: 10px
+        text-align: center
+        display: block
+        font-size: 6px
+
+      .line
+        display: block
+        height: 1px
+        background: -webkit-linear-gradient(left, #fff 14%,#333 50%,#fff 86%)
+        margin-top: 3px
+        margin-bottom: 5px
+    &.previous
+      float: left
+    &.next
+      float: right
