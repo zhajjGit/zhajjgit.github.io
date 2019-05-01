@@ -9,7 +9,7 @@ future: true
 github_profile: "https://github.com/zhajj"
 markdown: kramdown
 paginate: 50
-paginate_path: "blog/page:num/"
+paginate_path: "https://zhajj.github.io/page:num/"
 permalink: "/:year/:month/:day/:title"
 plugins: 
   - jekyll-feed
