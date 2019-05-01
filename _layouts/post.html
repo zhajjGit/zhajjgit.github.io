@@ -54,20 +54,6 @@ js: ["post.js"]
     </div>
 </div>
 <hr>
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="https://zhajj.github.io/{{ paginator.previous_page_path }}" class="previous">上一篇</a>
-  {% else %}
-    <span class="previous">没有上一篇了</span>
-  {% endif %}
-    <a href="https://zhajj.github.io/{{ paginator.previous_page }}" class="previous">上一篇</a>
-  <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-  {% if paginator.next_page %}
-    <a href="https://zhajj.github.io/{{ paginator.next_page_path }}" class="next">下一篇</a>
-  {% else %}
-    <span class="next ">没有下一篇了</span>
-  {% endif %}
-</div>
 <!-- <div class="knight">
     <p>技术文章推送</p>
     <p>手机、电脑实用软件分享</p>
