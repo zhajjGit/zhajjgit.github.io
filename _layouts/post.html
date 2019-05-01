@@ -55,16 +55,20 @@ js: ["post.js"]
 </div>
 <hr>
 <div class="pagination">
+    <a href="{{ page.previous }}">
         <div class="previous">
             <span class="p">上一页</span>
             <span class="line"></span>
             <span class="t">{{ page.previous.title }}</span>
         </div>
-    <div class="next">
-        <span class="p">上一页</span>
-        <span class="line"></span>
-        <span class="t">{{ page.next.title }}</span>
-    </div>
+    </a>
+    <a href="{{ page.previous }}">
+        <div class="next">
+            <span class="p">上一页</span>
+            <span class="line"></span>
+            <span class="t">{{ page.next.title }}</span>
+        </div>
+    </a>
 </div>
 <!-- <div class="knight">
     <p>技术文章推送</p>
