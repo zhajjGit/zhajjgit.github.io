@@ -100,16 +100,20 @@ main
 .pagination 
     div
       width: 200px
-      height: 59px
+      height: 61px
       padding-top: 5px
       padding-bottom: 5px
       border-radius: 6px
       background-color: #fff
-      color: #000
+      color: #bdbdbd
       i
         font-size: 36px
+        height: 51px
+        line-height: 51px
+        width: 36px
       &:hover
         box-shadow: 4px 4px 10px #b1afaf
+        color: #333
       span
         width: 164px
       .p
@@ -127,6 +131,13 @@ main
         margin-bottom: 5px
       &.previous
         float: left
+        i
+          float: left
+        span
+          float: right
       &.next
         float: right
-      
+          i
+            float: right
+          span
+            float: left
