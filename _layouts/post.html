@@ -55,22 +55,40 @@ js: ["post.js"]
 </div>
 <hr>
 <div class="pagination">
-    <a href="{{ page.previous.url }}">
-        <div class="previous link">
+    
+    {% if page.previous %}
+        <a href="{{ page.previous.url }}">
+            <div class="previous link">
+                <i class="material-icons">chevron_left</i>
+                <span class="p">上一页</span>
+                <span class="line"></span>
+                <span class="t">{{ page.previous.title }}</span>
+            </div>
+        </a>
+    {% else %}
+        <div class="previous">
             <i class="material-icons">chevron_left</i>
-            <span class="p">上一页</span>
+            <span class="p">没有上一页</span>
             <span class="line"></span>
-            <span class="t">{{ page.previous.title }}</span>
+            <span class="t">没有了</span>
         </div>
-    </a>
-    <a href="{{ page.next.url }}">
+    {% if page.next %}
+        <a href="{{ page.next.url }}">
+            <div class="next link">
+                <i class="material-icons">chevron_right</i>
+                <span class="p">下一页</span>
+                <span class="line"></span>
+                <span class="t">{{ page.next.title }}</span>
+            </div>
+        </a>
+    {% else %}
         <div class="next link">
             <i class="material-icons">chevron_right</i>
-            <span class="p">上一页</span>
+            <span class="p">没有下一页了</span>
             <span class="line"></span>
-            <span class="t">{{ page.next.title }}</span>
+            <span class="t">没有了</span>
         </div>
-    </a>
+    {% endif %}
 </div>
 <!-- <div class="knight">
     <p>技术文章推送</p>
