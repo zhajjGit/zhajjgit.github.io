@@ -56,7 +56,7 @@ js: ["post.js"]
 <hr>
 <div class="pagination">
     
-    {% if page.previous %}
+    {% if page.previous.url %}
         <a href="{{ page.previous.url }}">
             <div class="previous link">
                 <i class="material-icons">chevron_left</i>
@@ -72,7 +72,7 @@ js: ["post.js"]
             <span class="line"></span>
             <span class="t">没有了</span>
         </div>
-    {% if page.next %}
+    {% if page.next.url %}
         <a href="{{ page.next.url }}">
             <div class="next link">
                 <i class="material-icons">chevron_right</i>
@@ -99,7 +99,7 @@ js: ["post.js"]
         <b>微信公众号：程序骑士</b>
     </div>
 </div> -->
-<!-- {% if site.disqus_shortname and page.comments %}
+{% if site.disqus_shortname and page.comments %}
 <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
@@ -113,9 +113,9 @@ js: ["post.js"]
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
-</script> -->
+</script>
 <!--百度资源自动提交-->
-<!-- <script>
+<script>
     (function () {
         var bp = document.createElement('script');
         var curProtocol = window.location.protocol.split(':')[0];
@@ -127,7 +127,7 @@ js: ["post.js"]
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(bp, s);
     })();
-</script> -->
+</script>
 <!--end-->
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
