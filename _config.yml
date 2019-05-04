@@ -6,7 +6,7 @@ exclude:
   - Gemfile.lock
   - README.md
 future: true
-github_profile: "https://github.com/zhajj"
+github_profile: "https://github.com/zhajjgit"
 markdown: kramdown
 paginate: 50
 plugins: 
@@ -14,10 +14,10 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-repository: zhajj/zjjblog
+repository: zhajjgit/zjjblog
 sass: 
   style: compressed
 title: 萌新写手的博客
-url: "https://zhajj.github.io/zjjblog/"
+url: "https://zhajjgit.github.io/"
 user: 萌新写手
 user_email: 2534337852@qq.com
