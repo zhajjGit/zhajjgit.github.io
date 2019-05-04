@@ -14,10 +14,10 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-repository: zhajj/zhajj.github.io
+repository: zhajj/zjjblog
 sass: 
   style: compressed
 title: 萌新写手的博客
-url: "https://zhajj.github.io"
+url: "https://zhajj.github.io/zjjblog/"
 user: 萌新写手
 user_email: 2534337852@qq.com
